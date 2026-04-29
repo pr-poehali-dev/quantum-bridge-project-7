@@ -3,25 +3,25 @@ import { Timeline } from "@/components/ui/timeline"
 export function ApplicationsTimeline() {
   const data = [
     {
-      title: "Аудит и проектирование",
+      title: "Обследование и аудит",
       content: (
         <div>
           <p className="text-white text-sm md:text-base font-normal mb-6 leading-relaxed">
-            Наши инженеры проводят полный анализ текущих производственных процессов, выявляют узкие места и разрабатывают
-            индивидуальный план автоматизации под специфику вашего завода.
+            Проводим всестороннее обследование действующих систем автоматизации: аудит аппаратных и программных компонентов,
+            анализ документации, проверку средств измерений и калибровку критичных датчиков.
           </p>
           <div className="space-y-3">
             <div className="flex items-center gap-3 text-red-400 text-sm">
               <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Обследование производственных линий и оборудования
+              Оценка состояния ПЛК, HMI, РСУ и SCADA-систем
             </div>
             <div className="flex items-center gap-3 text-red-400 text-sm">
               <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Анализ потерь и расчёт ROI от автоматизации
+              Выявление потенциальных рисков и узких мест
             </div>
             <div className="flex items-center gap-3 text-red-400 text-sm">
               <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Разработка технического задания и архитектуры решения
+              Детальный отчёт и техническое задание на работы
             </div>
           </div>
         </div>
@@ -32,17 +32,17 @@ export function ApplicationsTimeline() {
       content: (
         <div>
           <p className="text-white text-sm md:text-base font-normal mb-6 leading-relaxed">
-            Поставляем и устанавливаем роботизированные комплексы, промышленные контроллеры и сенсорные системы.
-            Интегрируем с вашими ERP/MES-системами без остановки производства.
+            Выполняем полный цикл монтажных и пусконаладочных работ по согласованному графику.
+            Интегрируем оборудование Siemens, Schneider Electric, Phoenix Contact с существующей инфраструктурой предприятия.
           </p>
           <div className="space-y-3">
             <div className="flex items-center gap-3 text-red-400 text-sm">
               <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Монтаж и пусконаладка промышленного оборудования
+              Монтаж и пусконаладка без остановки производства
             </div>
             <div className="flex items-center gap-3 text-red-400 text-sm">
               <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Интеграция с SAP, 1С и существующими системами учёта
+              Сборка шкафов автоматики на собственной производственной базе
             </div>
             <div className="flex items-center gap-3 text-red-400 text-sm">
               <div className="w-2 h-2 bg-red-500 rounded-full"></div>
@@ -53,25 +53,25 @@ export function ApplicationsTimeline() {
       ),
     },
     {
-      title: "Поддержка и масштабирование",
+      title: "Техническое сопровождение",
       content: (
         <div>
           <p className="text-white text-sm md:text-base font-normal mb-6 leading-relaxed">
-            После запуска мы остаёмся на связи: мониторинг 24/7, удалённая диагностика и быстрое реагирование на
-            любые сбои. Постепенно расширяем автоматизацию на новые участки производства.
+            После запуска остаёмся инжиниринговым партнёром: круглосуточный мониторинг, удалённая диагностика
+            и выезд инженера в согласованные SLA-сроки. Управляем складом резервных модулей для оперативной замены.
           </p>
           <div className="space-y-3">
             <div className="flex items-center gap-3 text-red-400 text-sm">
               <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Мониторинг оборудования в режиме реального времени
+              Превентивное и предиктивное обслуживание 24/7
             </div>
             <div className="flex items-center gap-3 text-red-400 text-sm">
               <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Предиктивное обслуживание и удалённая диагностика
+              Прогнозируемый бюджет на эксплуатацию по контракту
             </div>
             <div className="flex items-center gap-3 text-red-400 text-sm">
               <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Масштабирование на новые цеха и производственные линии
+              Поверка КИПиА и ведение обязательной документации (Ростехнадзор)
             </div>
           </div>
         </div>
@@ -85,8 +85,8 @@ export function ApplicationsTimeline() {
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-6">Как мы работаем</h2>
           <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Три этапа — от первого звонка до полностью автоматизированного производства,
-            которое работает без вашего участия.
+            Три этапа — от первого обращения до стабильно работающего производства
+            с прогнозируемыми затратами на обслуживание.
           </p>
         </div>
 

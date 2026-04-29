@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin, Mail } from "lucide-react"
+import { Linkedin, Mail, Phone } from "lucide-react"
 
 export function Footer() {
   return (
@@ -8,53 +8,49 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <h2 className="font-orbitron text-2xl font-bold text-white mb-4">
-              Auto<span className="text-red-500">Line</span>
+              ГК <span className="text-red-500">КаЭЛ</span>
             </h2>
-            <p className="font-space-mono text-gray-300 mb-6 max-w-md">
-              Автоматизируем производственные линии на заводах — от аудита до запуска и поддержки 24/7.
+            <p className="font-space-mono text-gray-300 mb-2 max-w-md">
+              Разработка и внедрение автоматизированных систем управления технологическими процессами.
+            </p>
+            <p className="font-space-mono text-gray-500 text-sm mb-6 max-w-md">
+              Интеграция всех приводов и систем автоматизации любой степени сложности в рамках всего предприятия.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Twitter size={20} />
+              <a href="tel:89606335225" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
+                <Phone size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Github size={20} />
+              <a href="mailto:info@kael.pro" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
+                <Mail size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Mail size={20} />
-              </a>
             </div>
           </div>
 
-          {/* Product */}
+          {/* Services */}
           <div>
-            <h3 className="font-orbitron text-white font-semibold mb-4">Решения</h3>
+            <h3 className="font-orbitron text-white font-semibold mb-4">Услуги</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#applications"
-                  className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200"
-                >
-                  Как мы работаем
+                <a href="#features" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200 text-sm">
+                  Техподдержка АСУ ТП
                 </a>
               </li>
               <li>
-                <a
-                  href="#features"
-                  className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200"
-                >
-                  Возможности
+                <a href="#features" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200 text-sm">
+                  Диспетчеризация
                 </a>
               </li>
               <li>
-                <a
-                  href="#faq"
-                  className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200"
-                >
-                  Вопросы
+                <a href="#features" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200 text-sm">
+                  Сборка шкафов автоматики
+                </a>
+              </li>
+              <li>
+                <a href="#features" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200 text-sm">
+                  Модернизация оборудования
                 </a>
               </li>
             </ul>
@@ -62,26 +58,26 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="font-orbitron text-white font-semibold mb-4">Компания</h3>
+            <h3 className="font-orbitron text-white font-semibold mb-4">Контакты</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200">
-                  О нас
+                <a href="tel:89606335225" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200 text-sm">
+                  8 (960) 633-52-25
                 </a>
               </li>
               <li>
-                <a href="#" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200">
-                  Кейсы
+                <a href="https://kael.pro" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200 text-sm">
+                  kael.pro
                 </a>
               </li>
               <li>
-                <a href="#" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200">
-                  Карьера
+                <a href="#faq" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200 text-sm">
+                  Частые вопросы
                 </a>
               </li>
               <li>
-                <a href="#" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200">
-                  Контакты
+                <a href="#applications" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200 text-sm">
+                  Как мы работаем
                 </a>
               </li>
             </ul>
@@ -91,19 +87,10 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-red-500/20">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="font-space-mono text-gray-400 text-sm">2025 AutoLine. Все права защищены.</p>
+            <p className="font-space-mono text-gray-400 text-sm">© 2025 ГК «КаЭЛ». Все права защищены. На рынке с 2016 года.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a
-                href="#"
-                className="font-space-mono text-gray-400 hover:text-red-500 text-sm transition-colors duration-200"
-              >
-                Конфиденциальность
-              </a>
-              <a
-                href="#"
-                className="font-space-mono text-gray-400 hover:text-red-500 text-sm transition-colors duration-200"
-              >
-                Условия использования
+              <a href="#" className="font-space-mono text-gray-400 hover:text-red-500 text-sm transition-colors duration-200">
+                Политика конфиденциальности
               </a>
             </div>
           </div>

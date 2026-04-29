@@ -114,8 +114,8 @@ const Scene = () => {
 }
 
 export const Hero3DWebGL = () => {
-  const titleWords = "AutoLine Pro".split(" ")
-  const subtitle = "Автоматизация производственных линий нового поколения."
+  const titleWords = "ГК КаЭЛ".split(" ")
+  const subtitle = "Разработка и внедрение автоматизированных систем управления технологическими процессами."
   const [visibleWords, setVisibleWords] = useState(0)
   const [subtitleVisible, setSubtitleVisible] = useState(false)
   const [delays, setDelays] = useState<number[]>([])

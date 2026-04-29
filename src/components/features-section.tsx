@@ -3,52 +3,68 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Умное управление линией",
-    description: "ИИ-алгоритмы анализируют производственный процесс в реальном времени и автоматически оптимизируют параметры оборудования.",
-    icon: "brain",
-    badge: "ИИ",
-  },
-  {
-    title: "Промышленная надёжность",
-    description: "Системы сертифицированы по стандартам ISO 9001 и работают 24/7 без остановок в условиях производственных нагрузок.",
-    icon: "lock",
-    badge: "ISO 9001",
-  },
-  {
-    title: "Точность до 99,9%",
-    description: "Машинное зрение и сенсорные системы обеспечивают контроль качества продукции с точностью, недостижимой для человека.",
-    icon: "globe",
-    badge: "Качество",
-  },
-  {
-    title: "Предиктивное обслуживание",
-    description: "ML-модели предсказывают поломки оборудования за несколько дней и предотвращают дорогостоящие простои производства.",
+    title: "Техническая поддержка АСУ ТП",
+    description: "Комплексное сопровождение систем управления технологическими процессами: от полевых датчиков и ПЛК до SCADA и систем противоаварийной защиты (ПАЗ).",
     icon: "zap",
-    badge: "Аналитика",
+    badge: "Поддержка",
   },
   {
-    title: "Интеграция с ERP/MES",
-    description: "Бесшовное подключение к существующим системам управления предприятием: SAP, 1С, Oracle и любым MES-платформам.",
-    icon: "link",
+    title: "Диспетчеризация и автоматизация",
+    description: "Интеграция всех приводов и систем автоматизации любой степени сложности. Работаем с Modbus, Profibus, HART, Ethernet/IP и оборудованием любых производителей.",
+    icon: "globe",
     badge: "Интеграция",
   },
   {
-    title: "Визуализация в реальном времени",
-    description: "Цифровые дашборды и 3D-модели производственной линии — полная картина происходящего на заводе в одном экране.",
-    icon: "target",
-    badge: "Мониторинг",
+    title: "Сборка шкафов автоматики",
+    description: "Проектирование и производство шкафов управления под конкретные задачи предприятия. Собственная производственная база и склад запчастей.",
+    icon: "lock",
+    badge: "Производство",
   },
+  {
+    title: "Автоматизация производства",
+    description: "Внедрение роботизированных комплексов и систем управления, которые повышают OEE оборудования и снижают операционные затраты (OPEX).",
+    icon: "brain",
+    badge: "Автоматизация",
+  },
+  {
+    title: "Модернизация оборудования",
+    description: "Обновление устаревших систем управления без остановки производства. Продлеваем жизненный цикл активов и снижаем совокупную стоимость владения (TCO).",
+    icon: "target",
+    badge: "Модернизация",
+  },
+  {
+    title: "Предиктивная аналитика",
+    description: "Прогнозирование отказов на основе исторических данных и машинного обучения. Цифровые двойники технологических процессов для безрискового тестирования сценариев.",
+    icon: "link",
+    badge: "ИИ-аналитика",
+  },
+]
+
+const stats = [
+  { value: "9", label: "лет на рынке" },
+  { value: "8", label: "отраслей промышленности" },
+  { value: "24/7", label: "мониторинг и поддержка" },
+  { value: "SLA", label: "гарантированное время реакции" },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="features" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Наши услуги</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Технологии, которые превращают устаревший завод в интеллектуальное производство
+            Полный цикл работ по автоматизации и сопровождению АСУ ТП — от аудита до долгосрочного контракта
           </p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+          {stats.map((stat, index) => (
+            <div key={index} className="text-center p-6 rounded-lg border border-red-500/20 bg-card">
+              <div className="text-4xl font-bold text-red-500 font-orbitron mb-2">{stat.value}</div>
+              <div className="text-sm text-muted-foreground">{stat.label}</div>
+            </div>
+          ))}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

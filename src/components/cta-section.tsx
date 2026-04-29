@@ -5,24 +5,26 @@ export function CTASection() {
     <section className="py-24 px-6 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10">
       <div className="max-w-4xl mx-auto text-center">
         <div className="slide-up">
-          <h2 className="text-5xl font-bold text-foreground mb-6 font-sans text-balance">Готовы автоматизировать производство?</h2>
+          <h2 className="text-5xl font-bold text-foreground mb-6 font-sans text-balance">
+            Готовы обсудить задачу?
+          </h2>
           <p className="text-xl text-muted-foreground mb-10 leading-relaxed max-w-2xl mx-auto">
-            Оставьте заявку — и мы проведём бесплатный аудит вашего производства и рассчитаем реальную экономию
-            от автоматизации уже в первый месяц.
+            Свяжитесь с нами — проведём бесплатный технический аудит систем АСУ ТП вашего предприятия
+            и рассчитаем стоимость обслуживания под ваши задачи.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 pulse-button text-lg px-8 py-4"
             >
-              Получить бесплатный аудит
+              Запросить аудит
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-4 bg-transparent"
             >
-              Смотреть кейсы
+              Позвонить: 8 (960) 633-52-25
             </Button>
           </div>
         </div>
